@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio — Anh Tran</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 900px; line-height: 1.6; }
+    h2 { margin-top: 50px; }
+    nav a { margin-right: 20px; text-decoration: none; color: black; }
+    iframe { width: 100%; height: 600px; border: none; margin-top: 20px; }
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+</nav>
+
+<h1>Power BI Portfolio</h1>
+<p>A collection of dashboards demonstrating data modeling, DAX, and business insight storytelling.</p>
+
+<h2>Manufacturing KPI Dashboard</h2>
+<p>Tracks production efficiency, downtime, and throughput for operational decision‑making.</p>
+<iframe src="PASTE_YOUR_PUBLISH_TO_WEB_URL_HERE"></iframe>
+
+<h2>Sales Performance Dashboard</h2>
+<p>Analyzes revenue trends, customer segments, and product performance.</p>
+<iframe src="PASTE_YOUR_PUBLISH_TO_WEB_URL_HERE"></iframe>
+
+<h2>HR Analytics Dashboard</h2>
+<p>Shows employee distribution, retention, and workforce insights.</p>
+<iframe src="PASTE_YOUR_PUBLISH_TO_WEB_URL_HERE"></iframe>
+
+</body>
+</html>

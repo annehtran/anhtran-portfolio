@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anh Tran — Data Analyst</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 800px; line-height: 1.6; }
+    h1 { font-weight: 600; }
+    a { color: black; text-decoration: none; }
+    nav a { margin-right: 20px; }
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+</nav>
+
+<h1>Anh Tran</h1>
+<p>Data Analyst specializing in Power BI, data modeling, and workflow automation.  
+I turn raw data into clear, actionable insights for business decision‑making.</p>
+
+<p><a href="portfolio.html">View my Power BI portfolio →</a></p>
+
+</body>
+</html>

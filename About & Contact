@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About — Anh Tran</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 800px; line-height: 1.6; }
+    nav a { margin-right: 20px; text-decoration: none; color: black; }
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+</nav>
+
+<h1>About Me</h1>
+<p>I'm a Data Analyst with over 7 years of experience. I started as Business Data Analyst and worked in Singapore and Canada. In 2025, I elevated my career by returning to school in the United States to pursue the Business management certificate at UCSD. 
+I have a strong interest in finding the “why” behind any problems and thinking about solutions to fix them. I use analytical and critical thinking to apply to almost all issues that I encounter.</p>
+
+<h2>Contact</h2>
+<p><strong>LinkedIn:</strong> YOUR_LINKEDIN_URL</p>
+<p><strong>Email:</strong> yourname@email.com</p>
+<p><strong>Resume:</strong> Add a PDF link hosted in your GitHub repo</p>
+
+</body>
+</html>

@@ -1,28 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>About — Anh Tran</title>
-<style>
-    body { font-family: Arial, sans-serif; margin: 40px; max-width: 800px; line-height: 1.6; }
-    nav a { margin-right: 20px; text-decoration: none; color: black; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Anh Tran | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="any" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8GLRVX10Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-C8GLRVX10Y');
+  </script> 
+  
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --01: #f2f2f2;
+      --02: #d7a525;
+      --03: #b6b09f;
+      --04: #0f172a;
+      --05: #ffffff;
+      --06: #071e31;
+      --07: #ea580c;
+      --08: #757575;
+
+      --font-playfair: 'Playfair Display', serif;
+      --font-poppins: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-poppins);
+      background-color: var(--04);
+      color: var(--01);
+       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    header.site-header {
+      background-color: var(--06);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--03);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+      padding: 0 2rem;
+      position: relative;
+    }
+    
+    .logo, .footer-brand h2 {
+      font-family: var(--font-playfair);
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--02);
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2.25rem;
+    }
+
+    .nav-menu a {
+      color: var(--02);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+    }
+
+    .nav-menu a:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0 6px var(--02);
+    }
+
+    main {
+      padding-top: 100px;
+    }
+
+    .contact-list {
+      font-size: 1rem;
+      color: var(--03);
+      text-align: center;
+      width: 45%;
+      margin: 0 auto;
+    }
+
+   .contact-list p {
+    margin: 0.25rem 0;
+    text-align: left;
+    white-space: nowrap;
+    
+    }
+
+    /*.aboutme-layout {
+        display: flex;
+        align-items: center;
+        padding: 3rem 2rem;   
+        box-sizing: border-box;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between; }
+
+        */
+
+    .aboutme-text {
+        text-align: justify;
+    }
+
+    .aboutme-section {
+      background-color: var(--04);
+      padding: 1rem 0;
+    }
+
+    /* About me alignment */
+    .aboutme-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      padding: 0 2rem;
+      margin: 0 auto;
+      gap: 2rem;
+      flex-wrap: wrap;
+      box-sizing: border-box; 
+    }
+
+    /* Text box */
+    .aboutme-content {
+      flex: 1 1 550px;
+      font-size: 1rem;
+      color: var(--03);
+    }
+
+    .aboutme-who {
+      font-family: var(--font-poppins);
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--03);
+      margin-bottom: 1rem;
+      margin-top: 0;
+      
+    }
+    
+     .aboutme-photo {
+      flex: 1 1 300px;
+      text-align: center;
+
+    }
+
+    .aboutme-photo img {
+      max-width: 60%;
+      height: auto;
+      border-radius: 10px;
+      background-color: transparent;
+    }
+
+    .aboutme-photo p {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+     .aboutmephotos-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      padding: 0 2rem;
+      margin: 0 auto;
+      gap: 2rem;
+      flex-wrap: wrap;
+      box-sizing: border-box; 
+    }
+
+    .aboutme-footer {
+      font-family: var(--font-poppins);
+      font-style: bold;
+      color: var(--02);
+      text-align: left;
+      margin-top: 5rem;
+      font-size: 1.25rem;
+    }
+    
+    .aboutme-slider {
+      margin-bottom: 2rem;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .slider-track {
+      display: flex;
+      gap: 2rem;
+      width: max-content;
+      will-change: transform;
+      animation: slide 40s linear infinite;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+    }
+    
+    .slider-track img {
+      height: 200px;
+      width: auto;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+     .site-footer {
+      background-color: var(--06);
+      color: var(--02);
+      padding: 1rem 2rem 0;
+      margin-top: auto;
+      border-top: 1px solid var(--03);
+    }
+    
+     @keyframes slide {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 2rem;
+      gap: 5rem;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .footer-brand h2,
+    .footer-contact h3,
+    .footer-nav h3 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .footer-contact h3,
+    .footer-nav h3 {
+      color: var(--02);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-contact ul,
+    .footer-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-contact li,
+    .footer-nav li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--02);
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer-contact a,
+    .footer-nav a {
+      color: var(--02);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-contact a:hover,
+    .footer-nav a:hover {
+      color: var(--05);
+    }
+
+    .footer-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 1rem;
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      background-color: transparent;
+    }
+
+/* Responsive for mobile */
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      .logo, .footer-brand h2 {
+        font-size: 28px;
+        margin-bottom: 0.5rem;
+      }
+
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 1rem;
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        width: 100%;
+        background-color: var(--04);
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .nav-menu.show {
+        max-height: 500px;
+        padding: 1rem 0;
+        opacity: 1;
+      }
+
+      .nav-menu a {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 0;
+      }
+
+      .insights-section { padding: 5rem 1.5rem; }
+      .insights-title { font-size: 1.6rem; }
+      .insights-grid { gap: 1.75rem; }
+      .blog-card { grid-template-columns: 1fr; gap: 1.1rem; }
+      .blog-media { aspect-ratio: 5 / 3; }
+      .blog-body { gap: 0.35rem; }
+      .blog-title { font-size: 1.4rem; }
+      .values-button { display: flex; justify-content: center; }
+      .values-button .btn-learn-more {
+        width: 100%;
+        max-width: 320px;
+        font-size: 1rem;
+        padding: 0.85rem 1rem;
+        display: inline-flex;
+        justify-content: center;
+      }
+
+      .intro-grid {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro-content, .intro-image {
+        flex: 1 1 100%;
+      }
+
+      .intro-welcome {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .intro-name {
+        font-size: 2.25rem;
+      }
+
+      .intro-bullets {
+        padding-left: 1.5rem;
+        text-align: left;
+      }
+
+      .intro-quote, .project-footer {
+        font-size: 2rem;
+      }
+
+      
+      .card, .value-card {
+        padding: 1.75rem;
+        font-size: 0.875rem;
+      }
+
+      .card h2, .value-card h3 {
+        font-size: 1.25rem;
+      }
+    
+      .card .arrow {
+        width: 22px;
+        height: 22px;
+        align-self: flex-start;
+      }
+      
+      .who-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .who-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1.75rem;
+      }
+      
+      .values-title, .projects-title {
+        font-size: 1.5rem;
+        text-align: center;        
+        margin-bottom: 2.375rem;
+      }
+      
+      .who-content {
+        flex: 1 1 100%;
+      }
+      
+      .values-label, .projects-label {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 1.25rem;
+      }
+
+      .intro-bullets li, .card p, .who-content p, .value-card p, .project-desc {
+        font-size: 0.875rem;
+      }
+
+      .contact-title {
+        font-size: 1.625rem;
+      }
+      
+      .contact-subtitle, .contact-form input, .contact-form textarea {
+        font-size: 0.95rem;
+      }
+
+      .thank-you {
+        font-size: 1rem;
+      }
+      
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .footer-contact h3, .footer-nav h3, .footer-contact ul, .footer-nav ul, .footer-contact li, .footer-nav li {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
+
 <body>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-</nav>
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="logo" href="https://github.com/anh-tran154/anhtran-portfolio">ANH TRAN</a>
+        <nav class="nav-menu" id="nav-menu">
+        <a href="index.html">HOME</a>
+        <a href="portfolio.html">POWER BI PORTFOLIO</a>
+        <a href="about.html">ABOUT ME</a>
+      </nav>
+    </div>
+  </header>
 
-<h1>About Me</h1>
-<p>I'm a Data Analyst with over 7 years of experience. I started as Business Data Analyst and worked in Singapore and Canada. In 2025, I elevated my career by returning to school in the United States to pursue the Business management certificate at UCSD. 
-<p>I have a strong interest in finding the “why” behind any problems and thinking about solutions to fix them. I use analytical and critical thinking to apply to almost all issues that I encounter.</p>
+<main>
+    <section class="aboutme-section">
+       <div class="aboutme-grid"> 
+        <div class="aboutme-content">
+         <h1 class="aboutme-who">Who am I</h1>
+            <p class="aboutme-text">I'm a Data Analyst with over 7 years of experience. I started as Business Data Analyst and worked in Singapore and Canada. In 2025, I elevated my career by returning to school in the United States to pursue the Business Management Certificate at University of California San Diego.</p>
+            <p class="aboutme-text">I have a strong interest in finding the “why” behind any problems and thinking about solutions to fix them. I apply analytical and critical thinking to nearly all issues I encounter at work and in my daily life.</p>
+            <p class="aboutme-text">My goal is to boost a company's performance and optimize processes to help it operate more efficiently through data‑driven approaches.</p>
+        </div>    
+        <div class="aboutme-photo">
+            <img src="linkedinphoto.png" alt="Anh Tran">
+        </div>
+    </section>
 
-<h2>Contact</h2>
-<p><strong>LinkedIn:</strong> www.linkedin.com/in/anhtrananalyst</p>
-<p><strong>Email:</strong> annetran.uop@gmail.com</p>
+    <section class="aboutmephotos-grid">
+      <p class="aboutme-footer">I'm grateful for all the experiences and memories that my Data Analyst journey has brought into my life.</p>
+  
+
+      <div class="aboutme-slider">
+        <div class="slider-track">
+          <img src="ACN.JPG" alt="Accenture">
+          <img src="FBoffice.JPG" alt="FB">
+          <img src="halloweenFB.JPG" alt="Halloween">
+          <img src="FBLunarNY.JPG" alt="Lunar New Year">            
+          <img src="ACNyearend.JPG" alt="Startech">
+          <img src="Activities.JPG" alt="Cups">
+          <img src="Poolcompetition.jpg" alt="Pool">
+
+          <!--duplicate for seamless loop-->
+          <img src="ACN.JPG" alt="Accenture">
+          <img src="FBoffice.JPG" alt="FB">
+          <img src="halloweenFB.JPG" alt="Halloween">
+          <img src="FBLunarNY.JPG" alt="Lunar New Year">            
+          <img src="ACNyearend.JPG" alt="Startech">
+          <img src="Activities.JPG" alt="Cups">
+          <img src="Poolcompetition.jpg" alt="Pool">
+        </div>
+      </div>
+       </section>
+  
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>ANH TRAN</h2>
+      </div>
+
+      <div class="footer-contact">
+        <h3>CONTACT</h3>
+        <ul>
+        <div class="contact-logo"></div>
+          <li>
+            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener"><img src="linkedin.png" alt="LinkedIn" class="footer-icon" /></a>
+            <a href="https://github.com/anh-tran154" target="_blank" rel="noopener"><img src="GitHub logo.png" alt="GitHub" class="footer-icon" /></a>
+          </li>
+          <li><a href="mailto:annetran.uop@gmail.com">annetran.uop@gmail.com</a></li>
+          <li>San Diego, CA, United States</li>
+        </ul>
+      </div>
+    
+    </div>
+  </footer>
 
 </body>
 </html>

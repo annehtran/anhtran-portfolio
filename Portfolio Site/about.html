@@ -96,6 +96,64 @@
       text-shadow: 0 0 6px var(--02);
     }
 
+
+   /* Dropdown container */
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--06);
+    border: 1px solid var(--03);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 0.35rem;   /* small gap so hover still works */
+    width: auto;
+    min-width: 130px;
+    }
+
+  .dropdown-content a {
+    text-align: center;
+    white-space: normal;
+    padding: 0.35rem 1rem;
+    display: block;
+    color: var(--02);
+    text-decoration: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+    /* Dropdown button (looks like your nav links) */
+    .dropbtn {
+    color: var(--02);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    }
+
+
+
+    /* Hover effect */
+    .dropdown-content a:hover {
+    background-color: transparent;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
     main {
       padding-top: 100px;
     }
@@ -476,7 +534,16 @@
       <a class="logo" href="https://github.com/anh-tran154/anhtran-portfolio">ANH TRAN</a>
         <nav class="nav-menu" id="nav-menu">
         <a href="index.html">HOME</a>
+
+        <div class="dropdown">
         <a href="portfolio.html">PROJECTS</a>
+        <div class="dropdown-content">
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Power BI</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">SQL</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Excel</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Python</a>
+        </div>
+        </div>
         <a href="about.html">ABOUT ME</a>
       </nav>
     </div>
@@ -492,7 +559,7 @@
             <p class="aboutme-text">My goal is to boost a company's performance and optimize processes to help it operate more efficiently through data‑driven approaches.</p>
         </div>    
         <div class="aboutme-photo">
-            <img src="linkedinphoto.png" alt="Anh Tran">
+            <img src="images/linkedinphoto.png" alt="Anh Tran">
         </div>
     </section>
 
@@ -502,22 +569,22 @@
 
       <div class="aboutme-slider">
         <div class="slider-track">
-          <img src="ACN.JPG" alt="Accenture">
-          <img src="FBoffice.JPG" alt="FB">
-          <img src="halloweenFB.JPG" alt="Halloween">
-          <img src="FBLunarNY.JPG" alt="Lunar New Year">            
-          <img src="ACNyearend.JPG" alt="Startech">
-          <img src="Activities.JPG" alt="Cups">
-          <img src="Poolcompetition.jpg" alt="Pool">
+          <img src="images/ACN.JPG" alt="Accenture">
+          <img src="images/FBoffice.JPG" alt="FB">
+          <img src="images/halloweenFB.JPG" alt="Halloween">
+          <img src="images/FBLunarNY.JPG" alt="Lunar New Year">            
+          <img src="images/ACNyearend.JPG" alt="Startech">
+          <img src="images/Activities.JPG" alt="Cups">
+          <img src="images/Poolcompetition.jpg" alt="Pool">
 
           <!--duplicate for seamless loop-->
-          <img src="ACN.JPG" alt="Accenture">
-          <img src="FBoffice.JPG" alt="FB">
-          <img src="halloweenFB.JPG" alt="Halloween">
-          <img src="FBLunarNY.JPG" alt="Lunar New Year">            
-          <img src="ACNyearend.JPG" alt="Startech">
-          <img src="Activities.JPG" alt="Cups">
-          <img src="Poolcompetition.jpg" alt="Pool">
+          <img src="images/ACN.JPG" alt="Accenture">
+          <img src="images/FBoffice.JPG" alt="FB">
+          <img src="images/halloweenFB.JPG" alt="Halloween">
+          <img src="images/FBLunarNY.JPG" alt="Lunar New Year">            
+          <img src="images/ACNyearend.JPG" alt="Startech">
+          <img src="images/Activities.JPG" alt="Cups">
+          <img src="images/Poolcompetition.jpg" alt="Pool">
         </div>
       </div>
        </section>
@@ -535,8 +602,8 @@
         <ul>
         <div class="contact-logo"></div>
           <li>
-            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener"><img src="linkedin.png" alt="LinkedIn" class="footer-icon" /></a>
-            <a href="https://github.com/anh-tran154" target="_blank" rel="noopener"><img src="GitHub logo.png" alt="GitHub" class="footer-icon" /></a>
+            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener"><img src="images/linkedin.png" alt="LinkedIn" class="footer-icon" /></a>
+            <a href="https://github.com/anh-tran154" target="_blank" rel="noopener"><img src="images/GitHub logo.png" alt="GitHub" class="footer-icon" /></a>
           </li>
           <li><a href="mailto:annetran.uop@gmail.com">annetran.uop@gmail.com</a></li>
           <li>San Diego, CA, United States</li>

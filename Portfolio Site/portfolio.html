@@ -21,14 +21,14 @@
     *, *::before, *::after {
       box-sizing: border-box;
     }
-
+      
     :root {
       --01: #f2f2f2;
       --02: #d7a525;
       --03: #b6b09f;
       --04: #0f172a;
       --05: #ffffff;
-      --06: #117a65;
+      --06: #071e31;
       --07: #ea580c;
       --08: #757575;
 
@@ -43,8 +43,8 @@
       color: var(--01);
     }
 
-    header.site-header {
-      background-color: var(--04);
+       header.site-header {
+      background-color: var(--06);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -99,6 +99,64 @@
       transform: scale(1.05);
       text-shadow: 0 0 6px var(--02);
     }
+
+    /* Dropdown container */
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--06);
+  border: 1px solid var(--03);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 0.35rem;   /* small gap so hover still works */
+  width: auto;
+  min-width: 130px;
+}
+
+.dropdown-content a {
+  text-align: center;
+  white-space: normal;
+  padding: 0.35rem 1rem;
+  display: block;
+  color: var(--02);
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    /* Dropdown button (looks like your nav links) */
+    .dropbtn {
+    color: var(--02);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    }
+
+
+
+    /* Hover effect */
+    .dropdown-content a:hover {
+    background-color: transparent;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
     .about-layout {
         display: flex;
         gap: 3rem;
@@ -145,7 +203,14 @@
       border: none;
       z-index: 1001;
     }
-
+    .logo, .footer-brand h2 {
+      font-family: var(--font-playfair);
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--02);
+      text-decoration: none;
+    }
+  
     .intro-section {
       background-color: var(--04);
       padding: 0.3rem 0
@@ -363,171 +428,81 @@
       object-fit: contain;
     }
 
-    .values-section {
-      background-color: var(--02);
-      padding: 6rem 2rem;
-    }
     
-    .values-container, .projects-container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .values-title, .projects-title {
-      margin-bottom: 2.125rem;
-    }
-    
-    .values-grid, .projects-grid {
-      margin-bottom: 3.5rem;
-    }
-    
-    .value-card {
-      padding: 2rem;
-      border-radius: 10px;
-      background-color: var(--03);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start; 
-      align-items: flex-start; 
-      height: 100%; 
-    }
-
     .icon img {
       width: 30px;
       height: auto;
     }
     
-    .value-card h3, .value-card p {
-      color: var(--05)
-    }
-    
-    .value-resilience {
-      background-color: var(--04);
-    }
-
-    .value-courage {
-      background-color: var(--08);
-    }
-    
-    .values-button, .projects-button {
-      text-align: center;
-    }
-    
-    .btn-learn-more, .btn-explore-more, .contact-submit {
-      background-color: var(--03);
-      color: var(--05);
-      padding: 1rem 1.5rem;
-      font-weight: 600;
-      font-size: 1.125rem;
-      border: none;
-      border-radius: 10px;
-      text-align: center;
-      text-decoration: none;
-      transition: all 0.2s ease-in-out;
-    }
-    
-    .btn-learn-more:hover, .btn-explore-more:hover {
+    .site-footer {
       background-color: var(--06);
-      transform: scale(1.05);
-    }
-
-    .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2.5rem;
-      align-items: stretch;
-    }
-
-    .project-card {
-      display: flex;
-      flex-direction: column;
-      background: var(--05);
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(15, 23, 42, 0.12);
-      box-shadow: 0 18px 38px rgba(15, 23, 42, 0.16);
-      text-decoration: none;
-      color: inherit;
-      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(17, 122, 101, 0.4);
-      box-shadow: 0 26px 52px rgba(15, 23, 42, 0.2);
-    }
-
-    .project-card:focus-visible {
-      outline: 3px solid var(--07);
-      outline-offset: 4px;
-    }
-
-    .project-media {
-      position: relative;
-      aspect-ratio: 16 / 10;
-      overflow: hidden;
-      background: rgba(15, 23, 42, 0.85);
-    }
-
-    .project-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.35s ease;
-    }
-
-    .project-card:hover .project-media img,
-    .project-card:focus-visible .project-media img {
-      transform: scale(1.05);
-    }
-
-    .project-body {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
-      padding: 1.5rem 1.75rem 1.75rem;
-      background: var(--05);
-    }
-
-    .project-meta {
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      color: var(--08);
-      text-transform: uppercase;
-    }
-
-    .project-title {
-      margin: 0;
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: var(--04);
-      line-height: 1.4;
-    }
-
-    .project-desc {
-      margin: 0;
-      font-size: 0.95rem;
-      color: rgba(15, 23, 42, 0.7);
-      line-height: 1.6;
-    }
-
-    .project-tags {
+      color: var(--02);
+      padding: 1rem 2rem 0;
       margin-top: auto;
+      border-top: 1px solid var(--03);
+    }
+    
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      padding: 0 2rem;
+      gap: 5rem;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .footer-brand h2,
+    .footer-contact h3,
+    .footer-nav h3 {
+      margin-top: 0;
+      padding-top: 0;
     }
 
-    .project-tag {
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 0.35rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(17, 122, 101, 0.1);
-      color: var(--06);
-      white-space: nowrap;
+
+    .footer-contact h3,
+    .footer-nav h3 {
+      color: var(--02);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-contact ul,
+    .footer-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-contact li,
+    .footer-nav li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--02);
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer-contact a,
+    .footer-nav a {
+      color: var(--02);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-contact a:hover,
+    .footer-nav a:hover {
+      color: var(--05);
+    }
+
+    .footer-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 1rem;
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      background-color: transparent;
     }
 
     @media (max-width: 768px) {
@@ -986,12 +961,13 @@
     }
     @keyframes spin { to { transform: rotate(360deg); } }
     
-    .site-footer {
-      background-color: var(--04);
+     .site-footer {
+      background-color: var(--06);
       color: var(--02);
-      padding: 4rem 2rem 5rem;
+      padding: 1rem 2rem 0;
+      margin-top: auto;
+      border-top: 1px solid var(--03);
     }
-    
     .footer-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -1222,11 +1198,17 @@
   <header class="site-header">
     <div class="nav-container">
       <a class="logo" href="https://github.com/anh-tran154/anhtran-portfolio">ANH TRAN</a>
-
-
- <nav class="nav-menu" id="nav-menu">
+        <nav class="nav-menu" id="nav-menu">
         <a href="index.html">HOME</a>
+        <div class="dropdown">
         <a href="portfolio.html">PROJECTS</a>
+        <div class="dropdown-content">
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Power BI</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">SQL</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Excel</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Python</a>
+        </div>
+        </div>
         <a href="about.html">ABOUT ME</a>
       </nav>
     </div>
@@ -1251,7 +1233,29 @@
 <iframe src="PASTE_YOUR_PUBLISH_TO_WEB_URL_HERE"></iframe>
 
 </section>
+</main>
 
+<footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>ANH TRAN</h2>
+      </div>
 
+      <div class="footer-contact">
+        <h3>CONTACT</h3>
+        <ul>
+        <div class="contact-logo"></div>
+          <li>
+            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener"><img src="images/linkedin.png" alt="LinkedIn" class="footer-icon" /></a>
+            <a href="https://github.com/anh-tran154" target="_blank" rel="noopener"><img src="images/GitHub logo.png" alt="GitHub" class="footer-icon" /></a>
+          </li>
+          <li><a href="mailto:annetran.uop@gmail.com">annetran.uop@gmail.com</a></li>
+          <li>San Diego, CA, United States</li>
+        </ul>
+      </div>
+
+        
+    </div>
+  </footer>
 </body>
 </html>

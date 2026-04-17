@@ -107,6 +107,65 @@
       transform: scale(1.05);
       text-shadow: 0 0 6px var(--02);
     }
+
+/* Dropdown container */
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--06);
+  border: 1px solid var(--03);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 0.35rem;   /* small gap so hover still works */
+  width: auto;
+  min-width: 130px;
+}
+
+.dropdown-content a {
+  text-align: center;
+  white-space: normal;
+  padding: 0.35rem 1rem;
+  display: block;
+  color: var(--02);
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    /* Dropdown button (looks like your nav links) */
+    .dropbtn {
+    color: var(--02);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    }
+
+
+
+    /* Hover effect */
+    .dropdown-content a:hover {
+    background-color: transparent;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+
     .about-layout {
         display: flex;
         gap: 3rem;
@@ -453,11 +512,18 @@
   <header class="site-header">
     <div class="nav-container">
       <a class="logo" href="https://github.com/anh-tran154/anhtran-portfolio">ANH TRAN</a>
-
-
         <nav class="nav-menu">
         <a href="index.html">HOME</a>
+        <div class="dropdown">
         <a href="portfolio.html">PROJECTS</a>
+        <div class="dropdown-content">
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Power BI</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">SQL</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Excel</a>
+          <a href="https://github.com/anh-tran154/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Python</a>
+        </div>
+        </div>
+
         <a href="about.html">ABOUT ME</a>
         </nav>
     </div>
@@ -474,11 +540,11 @@
             <li>I work effectively across teams, functions, and diverse cultural environments.</li>
 
         <div class="skills-row">
-            <img src="Excel.png" alt="Excel">
-            <img src="PowerPoint.png" alt="PowerPoint">
-            <img src="Power BI.png" alt="Power BI">
-            <img src="SQL.png" alt="SQL">
-            <img src="Python.png" alt="Python"> 
+            <img src="images/Excel.png" alt="Excel">
+            <img src="images/PowerPoint.png" alt="PowerPoint">
+            <img src="images/Power BI.png" alt="Power BI">
+            <img src="images/SQL.png" alt="SQL">
+            <img src="images/Python.png" alt="Python"> 
         </div>
 
         <div class="intro-content">
@@ -500,8 +566,8 @@
         <ul>
         <div class="contact-logo"></div>
           <li>
-            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener"><img src="linkedin.png" alt="LinkedIn" class="footer-icon" /></a>
-            <a href="https://github.com/anh-tran154" target="_blank" rel="noopener"><img src="GitHub logo.png" alt="GitHub" class="footer-icon" /></a>
+            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener"><img src="images/linkedin.png" alt="LinkedIn" class="footer-icon" /></a>
+            <a href="https://github.com/anh-tran154" target="_blank" rel="noopener"><img src="images/GitHub logo.png" alt="GitHub" class="footer-icon" /></a>
           </li>
           <li><a href="mailto:annetran.uop@gmail.com">annetran.uop@gmail.com</a></li>
           <li>San Diego, CA, United States</li>

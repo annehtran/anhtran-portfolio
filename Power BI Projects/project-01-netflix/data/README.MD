@@ -1,6 +1,6 @@
-#This dataset has two files containing the titles (titles.csv) and the cast (credits.csv) for the title.
-**Source**: https://www.kaggle.com/victorsoeiro/datasets
-**License**: CC0: Public Domain
+#This dataset has two files containing the titles (titles.csv) and the cast (credits.csv) for the title.<BR>
+**Source**: https://www.kaggle.com/victorsoeiro/datasets<br>
+**License**: CC0: Public Domain<br>
 
 ## Question: What does the dataset look like?
 

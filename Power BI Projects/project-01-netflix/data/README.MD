@@ -6,14 +6,16 @@
 
 **Question: What does the dataset look like?**
 
-**77801 credits of actors and directors on Netflix titles with 5 columns contains:**
+Title table: There are 77801 rows of casts (actors/directors) with 5 columns containing:
+
 1. person_id: The actor or director's id on JustWatch (unique identifier)
 2. id: The title id on JustWatch
 3. name: The actor or director's name
 4. character: The charactor name
 5. role: ACTOR or DIRECTOR
 
-**5850 shows/movies titles on Netflix with 15 columns contains:**
+Cast table: There are 5850 rows of shows/movies titles with 15 columns containing:
+
 1. id: The title ID on JustWatch.
 2. title: The name of the title.
 3. show_type: TV show or movie.

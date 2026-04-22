@@ -20,8 +20,9 @@ This is an exploratory analysis on Netflix TV Shows and Movies using data scappe
 ## Conclusion
 -Recommendation
 
-## Raw Data and Outputs
+---
 
+## Raw Data and Outputs
 # Dataset
 - This dataset has two files containing the titles (titles.csv) and the cast (credits.csv) for the title.
 - credits_table: rows: 77801, columns: 5 | cast_table: rows: 5850, columns: 15 

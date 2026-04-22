@@ -2,6 +2,8 @@
 **Source**: https://www.kaggle.com/victorsoeiro/datasets<br>
 **License**: CC0: Public Domain<br>
 
+---
+
 **Question: What does the dataset look like?**
 
 **77801 credits of actors and directors on Netflix titles with 5 columns contains:**

@@ -18,7 +18,7 @@ This is an exploratory analysis on Netflix TV Shows and Movies using data scappe
 
 
 ## Conclusion
--Recommendation
+- Recommendation
 
 ---
 

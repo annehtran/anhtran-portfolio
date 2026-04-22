@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
 ## Subjective
-This is an exploratory analysis on Netflix TV Shows and Movies using data scapped from [JustWatch](https://www.justwatch.com/) in 2022. Findings the **insights** and **recommendation** for content-based using genres, descriptions, popularity, runtime, age certificate, countries
+This is an exploratory analysis on Netflix TV Shows and Movies using data scapped from [JustWatch](https://www.justwatch.com/) in 2022. Findings the **insights** and **recommendations** for content-based using genres, descriptions, popularity, runtime, age certificate, countries.
 
 ## Business Question Answered
 1. Developing a content-based recommender system using the genres and/or descriptions.

@@ -1,8 +1,8 @@
-# This dataset has two files containing the titles (titles.csv) and the cast (credits.csv) for the title.<BR>
+## This dataset has two files containing the titles (titles.csv) and the cast (credits.csv) for the title.<BR>
 **Source**: https://www.kaggle.com/victorsoeiro/datasets<br>
 **License**: CC0: Public Domain<br>
 
-## Question: What does the dataset look like?
+**Question: What does the dataset look like?**
 
 **77801 credits of actors and directors on Netflix titles with 5 columns contains:**
 1. person_id: The actor or director's id on JustWatch (unique identifier)

@@ -6,18 +6,18 @@
 # Subjective
 This is an exploratory analysis on Netflix TV Shows and Movies using data scapped from [JustWatch](https://www.justwatch.com/) in 2022. Findings the **insights** and **recommendations** for content-based using genres, descriptions, popularity, runtime, age certificate, countries.
 
-# Business Question Answered
+## Business Question Answered
 1. Developing a content-based recommender system using the genres and/or descriptions.
 2. Identifying the main content available on the streaming.
 3. Network analysis on the cast of the titles.
 4. Exploratory data analysis to find interesting insights.
 5. Recommendations
 
-# Summary
+## Summary
 - Finding from the data
 
 
-# Conclusion
+## Conclusion
 -Recommendation
 
 ---

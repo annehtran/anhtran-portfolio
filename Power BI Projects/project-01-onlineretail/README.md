@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
 # Subjective
-This is an exploratory analysis on a real online retail transaction data set of two years from [UCI Online Retail II][(https://archive.ics.uci.edu/dataset/502/online+retail+ii)]. Findings the **insights** and **recommendations** for content-based using genres, descriptions, popularity, runtime, age certificate, countries.
+This is an exploratory analysis on a real online retail transaction data set of two years from [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii). Findings the **insights** and **recommendations** for content-based using genres, descriptions, popularity, runtime, age certificate, countries.
 
 ## Business Question Answered
 1. Developing a content-based recommender system using the genres and/or descriptions.

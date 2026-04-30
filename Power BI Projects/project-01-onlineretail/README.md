@@ -4,12 +4,12 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
 # Subjective
-This is an exploratory analysis on a real online retail transaction data set of two years from [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii). Findings the **insights** and **recommendations** for content-based using genres, descriptions, popularity, runtime, age certificate, countries.
+This is an exploratory analysis on a real online retail transaction data set of two years from [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii). Findings the **insights** through countries, customers, prices, products performances and sale drivers across all regions then generate report and provide **recommendations** 
 
 ## Business Question Answered
-1. Developing a content-based recommender system using the genres and/or descriptions.
-2. Identifying the main content available on the streaming.
-3. Network analysis on the cast of the titles.
+1. How did it perform in 2020 and 2021?
+2. Identifying the key drivers for rising an droping in sales.
+3. What are top products and niche products?
 4. Exploratory data analysis to find interesting insights.
 5. Recommendations
 

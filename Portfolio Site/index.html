@@ -13,10 +13,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-C8GLRVX10Y');
-  </script> 
-  
+  </script>
+
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -29,25 +28,27 @@
       --04: #0f172a;
       --05: #ffffff;
       --06: #071e31;
-      --07: #ea580c;
-      --08: #757575;
-
       --font-playfair: 'Playfair Display', serif;
       --font-poppins: 'Poppins', sans-serif;
     }
 
-   
+    /* === BASE === */
+    html {
+      overflow-x: hidden;
+    }
+
     body {
       margin: 0;
       font-family: var(--font-poppins);
       background-color: var(--04);
       color: var(--01);
-       min-height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
+      overflow-x: hidden;
     }
 
-    /*Header line*/ 
+    /* === HEADER === */
     header.site-header {
       background-color: var(--06);
       display: flex;
@@ -61,14 +62,6 @@
       border-bottom: 1px solid var(--03);
     }
 
-    .page-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 6rem 2rem;
-    box-sizing: border-box;
-    }     
-
-    /*Tabs Alignment*/
     .nav-container {
       display: flex;
       justify-content: space-between;
@@ -78,23 +71,21 @@
       padding: 0 2rem;
       position: relative;
     }
-    
-    /*Anh Tran Logo setting*/
-    .logo, .footer-brand h2 {
+
+    .logo {
       font-family: var(--font-playfair);
       font-size: 30px;
       font-weight: 700;
       color: var(--02);
       text-decoration: none;
     }
-  
+
     .nav-menu {
       display: flex;
       align-items: center;
       gap: 2.25rem;
     }
 
-    /*Tabs menu setting*/
     .nav-menu a {
       color: var(--02);
       text-decoration: none;
@@ -108,84 +99,57 @@
       text-shadow: 0 0 6px var(--02);
     }
 
-/* Dropdown container */
+    /* === DROPDOWN === */
     .dropdown {
-    position: relative;
-    display: inline-block;
-    height: 100%;
+      position: relative;
+      display: inline-block;
+      height: 100%;
     }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--06);
-  border: 1px solid var(--03);
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 1000;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-top: 0.35rem;   /* small gap so hover still works */
-  width: auto;
-  min-width: 130px;
-}
-
-.dropdown-content a {
-  text-align: center;
-  white-space: normal;
-  padding: 0.35rem 1rem;
-  display: block;
-  color: var(--02);
-  text-decoration: none;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-    /* Dropdown button (looks like your nav links) */
-    .dropbtn {
-    color: var(--02);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 0 0.5rem;
-    cursor: pointer;
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--06);
+      border: 1px solid var(--03);
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      z-index: 1000;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-top: 0.35rem;
+      width: auto;
+      min-width: 130px;
     }
 
+    .dropdown-content a {
+      text-align: center;
+      white-space: normal;
+      padding: 0.35rem 1rem;
+      display: block;
+      color: var(--02);
+      text-decoration: none;
+    }
 
-
-    /* Hover effect */
     .dropdown-content a:hover {
-    background-color: transparent;
+      background-color: transparent;
     }
 
-    /* Show dropdown on hover */
     .dropdown:hover .dropdown-content {
-    display: block;
+      display: block;
     }
 
-
-    .about-layout {
-        display: flex;
-        gap: 3rem;
-        align-items: flex-start;
-        padding: 6rem 2rem;   /* aligns with your page */
-        box-sizing: border-box;
-        max-width: 1200px;
-        margin: 0 auto
-    }
-
+    /* === MAIN === */
     main {
       padding-top: 100px;
+      flex: 1;
     }
 
+    /* === INTRO SECTION === */
     .intro-section {
       background-color: var(--04);
-      padding: 1rem 0    
+      padding: 1rem 0;
     }
 
-    /* Center the grid content */
     .intro-grid {
       display: flex;
       justify-content: center;
@@ -195,16 +159,14 @@
       margin: 0 auto;
       gap: 2rem;
       flex-wrap: wrap;
-      box-sizing: border-box; 
+      box-sizing: border-box;
     }
 
-    /* Text box */
     .intro-content {
       flex: 1 1 600px;
       text-align: center;
     }
 
-    /*Hello setting*/    
     .intro-hello {
       font-family: var(--font-playfair);
       font-style: italic;
@@ -222,22 +184,36 @@
     }
 
     .intro-bullets {
-      list-style: none;
-      padding-left: 0;
+      list-style: disc;
+      padding-left: 1.5rem;
       display: inline-block;
       text-align: left;
+      margin-bottom: 0;
     }
 
     .intro-bullets li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    color: var(--01);
-}
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--01);
+    }
 
-  .intro-bullets li {
-    list-style-type: disc;
-    margin-left: 1.1rem;
-}
+    .skills-row {
+      display: flex;
+      gap: 0.2rem;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto 0;
+      box-sizing: border-box;
+      max-width: 600px;
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+
+    .skills-row img {
+      height: 45px;
+      width: auto;
+      object-fit: contain;
+    }
 
     .intro-quote {
       font-family: var(--font-playfair);
@@ -245,39 +221,19 @@
       font-size: 1.1rem;
       color: var(--02);
       margin-top: 2rem;
-      margin-bottom: 0rem;
-      text-align: center;
-    }
-    
-    .skills-row {
-      display: flex;
-      /*grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));*/
-      gap: 0.2rem;
-      justify-content: center;
-      align-items: center;
-      margin: 2rem auto 0;
-      box-sizing: border-box; 
-      max-width: 600px;
-      flex-wrap: nowrap;
-      padding: 0;
-    }
-    
-    .skills-row img {
-      height: 45px;
-      width: auto;
-      object-fit: contain;
+      margin-bottom: 0;
       text-align: center;
     }
 
-     .site-footer {
+    /* === FOOTER === */
+    .site-footer {
       background-color: var(--06);
       color: var(--02);
       padding: 1rem 2rem 0;
       margin-top: auto;
       border-top: 1px solid var(--03);
     }
-    
-    
+
     .footer-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -288,44 +244,43 @@
       justify-content: space-between;
       align-items: flex-start;
     }
-    
-    .footer-brand h2,
-    .footer-contact h3,
-    .footer-nav h3 {
+
+    .footer-brand h2 {
+      font-family: var(--font-playfair);
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--02);
       margin-top: 0;
       padding-top: 0;
     }
 
-    .footer-contact h3,
-    .footer-nav h3 {
+    .footer-contact h3 {
       color: var(--02);
+      margin-top: 0;
+      padding-top: 0;
       margin-bottom: 0.5rem;
     }
 
-    .footer-contact ul,
-    .footer-nav ul {
+    .footer-contact ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
-    
-    .footer-contact li,
-    .footer-nav li {
+
+    .footer-contact li {
       font-size: 1rem;
       line-height: 1.6;
       color: var(--02);
       margin-bottom: 0.5rem;
     }
-    
-    .footer-contact a,
-    .footer-nav a {
+
+    .footer-contact a {
       color: var(--02);
       text-decoration: none;
       transition: color 0.2s ease;
     }
 
-    .footer-contact a:hover,
-    .footer-nav a:hover {
+    .footer-contact a:hover {
       color: var(--05);
     }
 
@@ -334,13 +289,13 @@
       height: 24px;
       margin-right: 1rem;
       vertical-align: middle;
-      max-width: 100%;
-      height: auto;
       border-radius: 10px;
       background-color: transparent;
+      flex-shrink: 0;
+      display: inline-block;
     }
 
-/* Responsive for mobile */
+    /* === MOBILE === */
     @media (max-width: 768px) {
       .nav-container {
         flex-direction: column;
@@ -349,16 +304,9 @@
         padding: 1rem;
       }
 
-      .logo, .footer-brand h2 {
+      .logo {
         font-size: 28px;
         margin-bottom: 0.5rem;
-      }
-
-      .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 2rem;
-        top: 1rem;
       }
 
       .nav-menu {
@@ -390,29 +338,12 @@
         padding: 0.75rem 0;
       }
 
-      .insights-section { padding: 5rem 1.5rem; }
-      .insights-title { font-size: 1.6rem; }
-      .insights-grid { gap: 1.75rem; }
-      .blog-card { grid-template-columns: 1fr; gap: 1.1rem; }
-      .blog-media { aspect-ratio: 5 / 3; }
-      .blog-body { gap: 0.35rem; }
-      .blog-title { font-size: 1.4rem; }
-      .values-button { display: flex; justify-content: center; }
-      .values-button .btn-learn-more {
-        width: 100%;
-        max-width: 320px;
-        font-size: 1rem;
-        padding: 0.85rem 1rem;
-        display: inline-flex;
-        justify-content: center;
-      }
-
       .intro-grid {
         flex-direction: column;
         text-align: center;
       }
 
-      .intro-content, .intro-image {
+      .intro-content {
         flex: 1 1 100%;
       }
 
@@ -420,7 +351,7 @@
         font-size: 1.5rem;
         margin-bottom: 1rem;
       }
-      
+
       .intro-name {
         font-size: 2.25rem;
       }
@@ -430,77 +361,19 @@
         text-align: left;
       }
 
-      .intro-quote, .projects-footer {
-        font-size: 2rem;
-      }
-      
-      .card, .value-card {
-        padding: 1.75rem;
-        font-size: 0.875rem;
-      }
-
-      .card h2, .value-card h3 {
-        font-size: 1.25rem;
-      }
-    
-      .card .arrow {
-        width: 22px;
-        height: 22px;
-        align-self: flex-start;
-      }
-      
-      .who-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      
-      .who-title {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 1.75rem;
-      }
-      
-      .values-title, .projects-title {
-        font-size: 1.5rem;
-        text-align: center;        
-        margin-bottom: 2.375rem;
-      }
-      
-      .who-content {
-        flex: 1 1 100%;
-      }
-      
-      .values-label, .projects-label {
-        text-align: center;
-        display: block;
-        width: 100%;
-        margin-bottom: 1.25rem;
-      }
-
-      .intro-bullets li, .card p, .who-content p, .value-card p, .project-desc {
-        font-size: 0.875rem;
-      }
-
-      .contact-title {
-        font-size: 1.625rem;
-      }
-      
-      .contact-subtitle, .contact-form input, .contact-form textarea {
-        font-size: 0.95rem;
-      }
-
-      .thank-you {
+      .intro-quote {
         font-size: 1rem;
       }
-      
+
       .footer-container {
         flex-direction: column;
         align-items: center;
         gap: 0.75rem;
       }
 
-      .footer-contact h3, .footer-nav h3, .footer-contact ul, .footer-nav ul, .footer-contact li, .footer-nav li {
+      .footer-contact h3,
+      .footer-contact ul,
+      .footer-contact li {
         text-align: center;
       }
     }
@@ -511,69 +384,73 @@
 
   <header class="site-header">
     <div class="nav-container">
-      <a class="logo" href="https://github.com/annehtran/anhtran-portfolio">ANH TRAN</a>
-        <nav class="nav-menu">
+      <a class="logo" href="index.html">ANH TRAN</a>
+      <nav class="nav-menu">
         <a href="index.html">HOME</a>
         <div class="dropdown">
-        <a href="portfolio.html">PROJECTS</a>
-        <div class="dropdown-content">
-          <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Power BI</a>
-          <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">SQL</a>
-          <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Excel</a>
-          <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Python</a>
+          <a href="portfolio.html">PROJECTS</a>
+          <div class="dropdown-content">
+            <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Power BI</a>
+            <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">SQL</a>
+            <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Excel</a>
+            <a href="https://github.com/annehtran/anhtran-portfolio/blob/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects/Data%20Importing%20and%20Cleaning/Exploring%20Airbnb%20Market%20Trends_script.ipynb">Python</a>
+          </div>
         </div>
-        </div>
-
         <a href="about.html">ABOUT ME</a>
-        </nav>
+      </nav>
     </div>
   </header>
-   
-   <main>
+
+  <main>
     <section class="intro-section">
+      <div class="intro-grid">
         <div class="intro-content">
-          <p class="intro-hello">Hello, Thank you for visting!</p>
+
+          <p class="intro-hello">Hello, Thank you for visiting!</p>
+
           <h1 class="intro-name">My name is <br>Anh Tran</h1>
+
           <ul class="intro-bullets">
             <li>A data analyst specializing in Power BI, data modeling, and workflow automation.</li>
-            <li>I turn raw data into clear, actionable insights for business decision‑making.</li>
+            <li>I turn raw data into clear, actionable insights for business decision-making.</li>
             <li>I work effectively across teams, functions, and diverse cultural environments.</li>
+          </ul>
 
-        <div class="skills-row">
-            <img src="images/Excel.png" alt="Excel">
-            <img src="images/PowerPoint.png" alt="PowerPoint">
-            <img src="images/Power BI.png" alt="Power BI">
-            <img src="images/SQL.png" alt="SQL">
-            <img src="images/Python.png" alt="Python"> 
+          <div class="skills-row">
+            <img src="images/Excel.png" alt="Excel" />
+            <img src="images/PowerPoint.png" alt="PowerPoint" />
+            <img src="images/Power BI.png" alt="Power BI" />
+            <img src="images/SQL.png" alt="SQL" />
+            <img src="images/Python.png" alt="Python" />
+          </div>
+
+          <p class="intro-quote">"Integrity is doing the right thing, even when no one is watching"</p>
+
         </div>
-
-        <div class="intro-content">
-            <p class="intro-quote">"Integrity is doing the right thing, even when no one is watching"
-        </div>
-
       </div>
-    </section> 
-   </main>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-brand">
         <h2>ANH TRAN</h2>
       </div>
-
       <div class="footer-contact">
         <h3>CONTACT</h3>
         <ul>
-        <div class="contact-logo"></div>
           <li>
-            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener"><img src="images/linkedin.png" alt="LinkedIn" class="footer-icon" /></a>
-            <a href="https://github.com/annehtran" target="_blank" rel="noopener"><img src="images/GitHub logo.png" alt="GitHub" class="footer-icon" /></a>
+            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener">
+              <img src="images/linkedin.png" alt="LinkedIn" class="footer-icon" />
+            </a>
+            <a href="https://github.com/annehtran" target="_blank" rel="noopener">
+              <img src="images/GitHub logo.png" alt="GitHub" class="footer-icon" />
+            </a>
           </li>
           <li><a href="mailto:annetran.uop@gmail.com">annetran.uop@gmail.com</a></li>
           <li>San Diego, CA, United States</li>
         </ul>
       </div>
-    
     </div>
   </footer>
 

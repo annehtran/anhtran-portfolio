@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Anh Tran | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anh Tran | Projects</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="any" />
 
@@ -13,15 +13,14 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-C8GLRVX10Y');
-  </script> 
-  
+  </script>
+
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
     }
-      
+
     :root {
       --01: #f2f2f2;
       --02: #d7a525;
@@ -29,11 +28,13 @@
       --04: #0f172a;
       --05: #ffffff;
       --06: #071e31;
-      --07: #ea580c;
-      --08: #757575;
-
       --font-playfair: 'Playfair Display', serif;
       --font-poppins: 'Poppins', sans-serif;
+    }
+
+    /* === BASE === */
+    html {
+      overflow-x: hidden;
     }
 
     body {
@@ -41,9 +42,14 @@
       font-family: var(--font-poppins);
       background-color: var(--04);
       color: var(--01);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
     }
 
-       header.site-header {
+    /* === HEADER === */
+    header.site-header {
       background-color: var(--06);
       display: flex;
       justify-content: center;
@@ -56,13 +62,6 @@
       border-bottom: 1px solid var(--03);
     }
 
-     .page-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 6rem 2rem;
-    box-sizing: border-box;
-    }     
-
     .nav-container {
       display: flex;
       justify-content: space-between;
@@ -72,8 +71,8 @@
       padding: 0 2rem;
       position: relative;
     }
-    
-    .logo, .footer-brand h2 {
+
+    .logo {
       font-family: var(--font-playfair);
       font-size: 30px;
       font-weight: 700;
@@ -100,340 +99,122 @@
       text-shadow: 0 0 6px var(--02);
     }
 
-    /* Dropdown container */
+    /* === DROPDOWN === */
     .dropdown {
-    position: relative;
-    display: inline-block;
-    height: 100%;
-    }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--06);
-  border: 1px solid var(--03);
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 1000;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-top: 0.35rem;   /* small gap so hover still works */
-  width: auto;
-  min-width: 130px;
-}
-
-.dropdown-content a {
-  text-align: center;
-  white-space: normal;
-  padding: 0.35rem 1rem;
-  display: block;
-  color: var(--02);
-  text-decoration: none;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-    /* Dropdown button (looks like your nav links) */
-    .dropbtn {
-    color: var(--02);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 0 0.5rem;
-    cursor: pointer;
-    }
-
-
-
-    /* Hover effect */
-    .dropdown-content a:hover {
-    background-color: transparent;
-    }
-
-    /* Show dropdown on hover */
-    .dropdown:hover .dropdown-content {
-    display: block;
-    }
-
-    .about-layout {
-        display: flex;
-        gap: 3rem;
-        align-items: flex-start;
-        padding: 6rem 2rem;   /* aligns with your page */
-        box-sizing: border-box;
-        max-width: 1200px;
-        margin: 0 auto
-    }
-
-    .portfolio-section {
-          max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    
-    .btn-contact {
-      background-color: var(--03);
-      color: var(--05);
-      padding: 1rem 1.5rem;
-      font-size: 16px;
-      font-weight: 600;
-      border-radius: 10px;
-      text-align: center;
-      text-decoration: none;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .btn-contact:hover {
-      background-color: var(--06);
-      transform: scale(1.05);
-    }
-
-    main {
-      padding-top: 100px;
-    }
-    
-    .menu-toggle {
-      display: none;
-      font-size: 28px;
-      color: var(--05);
-      background: none;
-      border: none;
-      z-index: 1001;
-    }
-    .logo, .footer-brand h2 {
-      font-family: var(--font-playfair);
-      font-size: 30px;
-      font-weight: 700;
-      color: var(--02);
-      text-decoration: none;
-    }
-  
-    .intro-section {
-      background-color: var(--04);
-      padding: 0.3rem 0
-      
-    }
-
-    /* Center the grid content */
-    .intro-grid {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 1200px;
-      padding: 0 2rem;
-      margin: 0 auto;
-      gap: 2rem;
-      flex-wrap: wrap;
-      box-sizing: border-box; 
-    }
-
-    /* Text box */
-    .intro-content {
-      flex: 1 1 600px;
-      text-align: center;
-    }
-
-    .intro-welcome {
-      font-family: var(--font-playfair);
-      font-style: italic;
-      font-size: 1.5rem;
-      color: var(--02);
-    }
-
-    .intro-name {
-      font-family: var(--font-poppins);
-      font-size: 3rem;
-      font-weight: 900;
-      color: var(--05);
-      margin-bottom: 2rem;
-      line-height: 1.4;
-    }
-
-    .intro-bullets {
-      list-style: none;
-      padding-left: 0;
+      position: relative;
       display: inline-block;
-      text-align: left;
+      height: 100%;
     }
 
-    .intro-bullets li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    color: var(--01);
-}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--06);
+      border: 1px solid var(--03);
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      z-index: 1000;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-top: 0.35rem;
+      width: auto;
+      min-width: 130px;
+    }
 
-  .intro-bullets li {
-    list-style-type: disc;
-    margin-left: 1.1rem;
-}
-
-
-    .intro-image {
-      flex: 1 1 300px;
+    .dropdown-content a {
       text-align: center;
+      white-space: normal;
+      padding: 0.35rem 1rem;
+      display: block;
+      color: var(--02);
+      text-decoration: none;
     }
 
-    .intro-image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
+    .dropdown-content a:hover {
       background-color: transparent;
     }
 
-    .intro-quote {
-      font-family: var(--font-playfair);
-      font-style: italic;
-      font-size: 1.1rem;
-      color: var(--02);
-      margin-top: 2rem;
-      margin-bottom: 0rem;
-      text-align: center;
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
-    .cards-section {
-      background-color: var(--04);
-      padding: 6rem 2rem;
-    }
-    
-    .cards-grid, .values-grid, .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+    /* === MAIN === */
+    main {
+      padding-top: 100px;
+      padding-bottom: 80px;
+      flex: 1;
+     }
+
+    /* === PORTFOLIO CONTENT === */
+    .portfolio-grid {
       max-width: 1200px;
-      margin: auto;
-    }
-
-    .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center; 
-      height: 100%; 
-      padding: 2rem;
-      border-radius: 10px;
-      position: relative;
-      transition: transform 0.3s ease;
-      text-decoration: none; 
-      width: 100%;   
+      margin: 0 auto;
+      padding: 1rem 2rem;
       box-sizing: border-box;
-    }
+     }
 
-    .card h2, .value-card h3, .project-title {
+   
+    .portfolio-grid h1 {
       font-family: var(--font-poppins);
       font-size: 1.5rem;
-      font-weight: 900;
-      color: var(--04);
-    }
-    
-    .card p, .value-card p {
+      font-weight: 700;
+      color: var(--03);
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      }
+
+    .portfolio-grid h2 {
       font-family: var(--font-poppins);
-      font-size: 1rem;
-      line-height: 1.6;
-      color: var(--04);
-      text-align: justify;
-      margin-top: 0.25rem;
-    }
-
-    .card .arrow {
-      width: 28px;
-      height: 28px;
-      background-image: url("Images/Icons/Arrow.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: left center;
-      margin-top: 0.5rem;
-    }
-    
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    
-    .card-story {
-      background-color: var(--02);
-    }
-    
-    .card-experience {
-      background-color: var(--05);
-    }
-    
-    .card-work {
-      background-color: var(--03);
-    }
-
-    .who-section, .projects-section {
-      background-color: var(--05);
-      padding: 6rem 2rem;
-    }
-    
-    .who-grid {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: center;
-      max-width: 1200px;
-      margin: auto;
-      gap: 5rem;
-    }
-    
-    .who-image img {
-      width: 100%;
-      max-width: 360px;
-      border-radius: 10px;
-    }
-
-    .who-label, .values-label, .projects-label {
-      font-family: var(--font-poppins);
+      font-size: 1.1rem;
       font-weight: 600;
-      font-size: 1.125rem;
-      color: var(--08);
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-   
-    .who-title, .values-title, .projects-title, .contact-title {
-      font-family: var(--font-poppins);
-      font-weight: 900;
-      font-size: 1.75rem;
-      color: var(--06);
-      line-height: 1.4;
-      margin-bottom: 1.45rem;
-    }
-      
-    .who-content {
-      flex: 1 1 300px;
-    }
+      color: var(--02);
+      margin-top: 1 rem;
+      margin-bottom: 0.5rem;
+     }
 
-    .who-content p {
+    .portfolio-grid p {
       font-size: 1rem;
-      color: var(--08);
-      line-height: 1.6;
-      text-align: justify;
-    }
-    
-    .skills-row {
-      display: flex;
-      /*grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));*/
-      gap: 0rem;
-      justify-items: center;
-      margin-top: 2rem;
-      margin-left: 11.45rem;
-    }
-    
-    .skills-row img {
-      height: 45px;
-      width: auto;
-      object-fit: contain;
-    }
+      color: var(--01);
+        line-height: 1.7;
+      margin-bottom: 0.75rem;
+     }
 
-    
-    .icon img {
-      width: 30px;
+    /* === DASHBOARD IMAGE === */
+    .dashboard-img-wrapper {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 16px 0 40px;
+     }
+
+    .dashboard-img-wrapper img {
+      width: 80%;
       height: auto;
-    }
-    
+      display: block;
+      border-radius: 10px;
+     }
+
+      .dashboard-bullets li {
+      font-size: 1rem;
+      color: var(--01);
+      margin-top: 0.5rem;
+      padding-left: 0.1rem;
+      display: list-item;
+      text-align: left;
+      list-style-type: disc
+     
+      }
+    /* === IFRAME === */
+    .dashboard-iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      margin: 16px 0 40px;
+      display: block;
+      }
+
+    /* === FOOTER === */
     .site-footer {
       background-color: var(--06);
       color: var(--02);
@@ -441,7 +222,7 @@
       margin-top: auto;
       border-top: 1px solid var(--03);
     }
-    
+
     .footer-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -452,45 +233,43 @@
       justify-content: space-between;
       align-items: flex-start;
     }
-    
-    .footer-brand h2,
-    .footer-contact h3,
-    .footer-nav h3 {
+
+    .footer-brand h2 {
+      font-family: var(--font-playfair);
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--02);
       margin-top: 0;
       padding-top: 0;
     }
 
-
-    .footer-contact h3,
-    .footer-nav h3 {
+    .footer-contact h3 {
       color: var(--02);
+      margin-top: 0;
+      padding-top: 0;
       margin-bottom: 0.5rem;
     }
 
-    .footer-contact ul,
-    .footer-nav ul {
+    .footer-contact ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
-    
-    .footer-contact li,
-    .footer-nav li {
+
+    .footer-contact li {
       font-size: 1rem;
       line-height: 1.6;
       color: var(--02);
       margin-bottom: 0.5rem;
     }
-    
-    .footer-contact a,
-    .footer-nav a {
+
+    .footer-contact a {
       color: var(--02);
       text-decoration: none;
       transition: color 0.2s ease;
     }
 
-    .footer-contact a:hover,
-    .footer-nav a:hover {
+    .footer-contact a:hover {
       color: var(--05);
     }
 
@@ -499,534 +278,13 @@
       height: 24px;
       margin-right: 1rem;
       vertical-align: middle;
-      max-width: 100%;
-      height: auto;
       border-radius: 10px;
       background-color: transparent;
-    }
-
-    @media (max-width: 768px) {
-      .projects-grid {
-        gap: 1.75rem;
-      }
-
-      .project-card {
-        border-radius: 14px;
-      }
-
-      .project-body {
-        padding: 1.25rem 1.5rem 1.5rem;
-      }
-
-      .project-title {
-        font-size: 1.1rem;
-      }
-
-      .project-desc {
-        font-size: 0.9rem;
-      }
-    }
-
-    .projects-footer {
-      font-family: var(--font-playfair);
-      font-style: italic;
-      color: var(--06);
-      text-align: center;
-      margin-top: 5rem;
-      font-size: 1.25rem;
-    }
-    
-    .project-slider {
-      margin-top: 2.375rem;
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .slider-track {
-      display: flex;
-      gap: 2rem;
-      width: max-content;
-      will-change: transform;
-      animation: slide 25s linear infinite;
-      backface-visibility: hidden;
-      transform: translateZ(0);
-    }
-    
-    .slider-track img {
-      height: 200px;
-      width: auto;
-      border-radius: 10px;
       flex-shrink: 0;
-    }
-    
-    @keyframes slide {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-
-    .insights-section {
-      background-color: var(--02);
-      padding: 6rem 2rem;
-    }
-
-    .insights-container {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    .insights-header {
-      text-align: left;
-      max-width: 960px;
-      margin: 0 0 2.5rem;
-    }
-
-    .insights-label {
-      font-family: var(--font-poppins);
-      font-weight: 600;
-      font-size: 1.125rem;
-      color: var(--08);
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    .insights-title {
-      margin: 0 0 1.45rem;
-      font-family: var(--font-poppins);
-      font-weight: 900;
-      font-size: 1.75rem;
-      color: var(--06);
-      line-height: 1.4;
-    }
-
-    .insights-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 2.2rem;
-    }
-
-    .blog-card {
-      display: grid;
-      grid-template-columns: minmax(0, 220px) 1fr;
-      gap: 2rem;
-      text-decoration: none;
-      color: inherit;
-      background: transparent;
-    }
-
-    .blog-card:hover .blog-title {
-      color: #0f172a;
-    }
-
-    .blog-media {
-      aspect-ratio: 4 / 3;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .blog-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .blog-body {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      padding: 0;
-    }
-
-    .blog-tag {
-      font-family: var(--font-poppins);
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #6b7076;
-    }
-
-    .blog-title {
-      margin: 0;
-      font-family: var(--font-playfair);
-      font-size: 1.52rem;
-      font-weight: 700;
-      color: #1f252b;
-      line-height: 1.45;
-      text-decoration: underline;
-      text-decoration-color: transparent;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 6px;
-      transition: color 0.2s ease, text-decoration-color 0.2s ease;
-    }
-
-    .blog-card:hover .blog-title,
-    .blog-card:focus-visible .blog-title {
-      color: #0f172a;
-      text-decoration-color: rgba(15, 23, 42, 0.5);
-    }
-
-    .blog-desc {
-      margin: 0;
-      font-size: 0.93rem;
-      line-height: 1.55;
-      color: #4d5054;
-    }
-
-    .blog-meta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      font-size: 0.78rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: rgba(31, 37, 43, 0.55);
-    }
-
-    .blog-meta span {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    .blog-read::before {
-      content: "⏱";
-      font-size: 0.9rem;
-    }
-
-    .insights-footer {
-      margin-top: 2.75rem;
-      text-align: center;
-    }
-
-    .insights-view-all {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--06);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-
-    .insights-view-all:hover {
-      color: var(--07);
-    }
-
-
-    .contact-section {
-      background-color: var(--01);
-      padding: 6rem 2rem;
-      text-align: left;
-
-    }
-
-    .contact-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2.5rem;
-      padding: 2.75rem;
-      background: var(--04);
-      border-radius: 24px;
-      border: 1px solid rgba(15, 23, 42, 0.12);
-      box-shadow: 0 24px 48px rgba(15, 23, 42, 0.08);
-      box-sizing: border-box;
-    }
-
-    .contact-form-wrapper {
-      width: 100%;
-      display: flex;
-      align-items: center;
-    }
-
-    .contact-form {
-      width: 100%;
-      background: var(--05);
-      padding: 2rem;
-      border-radius: 16px;
-      color: var(--04);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    }
-
-    .contact-info ul {
-      list-style: none;
-      padding: 0;
-      margin: 1.5rem 0 0;
-    }
-
-    .contact-info ul li {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-      line-height: 1.4;
-      color: var(--01);
-    }
-
-    .contact-info ul li:last-child {
-      margin-bottom: 0;
-      gap: 1rem;
-    }
-
-    .contact-icon {
-      width: 44px;
-      height: 44px;
-      background: var(--07);
-      padding: 8px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .contact-info ul li.contact-links a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 0.75rem;
-    }
-
-    .contact-info ul li.contact-links a:last-child {
-      margin-right: 0;
-    }
-
-    .contact-info ul li.contact-links img.footer-icon {
-      margin: 0;
-    }
-
-    @media (min-width: 768px) {
-      .contact-info, .contact-form-wrapper {
-        max-width: 80%;
-        margin: 0 auto;
-      }
-    }
-
-    .contact-title {
-      color: var(--02);
-      font-size: 2.5rem;
-      margin: 0.75rem 0 1rem;
-    }
-
-    .contact-label {
       display: inline-block;
-      color: var(--07);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: 600;
     }
 
-    .contact-subtitle {
-      font-family: var(--font-poppins);
-      font-size: 1rem;
-      color: var(--01);
-      margin-bottom: 1.25rem;
-    }
-
-    .contact-form-title {
-      margin: 0 0 1rem 0;
-      font-size: 1.25rem;
-      color: var(--04);
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      font-family: var(--font-poppins);
-      border: 1px solid rgba(15, 23, 42, 0.12);
-      border-radius: 8px;
-      background-color: var(--01);
-      color: var(--04);
-    }
-
-    .contact-form textarea {
-      resize: vertical;
-    }
-    
-    .contact-submit {
-      background: var(--07);
-      color: var(--05);
-      padding: 0.75rem 1.25rem;
-      border-radius: 6px;
-      border: none;
-      font-weight: 700;
-      transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,.15);
-      will-change: transform, box-shadow;
-    }
-
-    .contact-submit:hover {
-      background: var(--06);         
-      transform: translateY(-1px) scale(1.03);
-      box-shadow: 0 8px 20px rgba(0,0,0,.18);
-    }
-
-    .contact-submit:active {
-      transform: translateY(0) scale(0.98); 
-      box-shadow: 0 2px 8px rgba(0,0,0,.12);
-    }
-
-    .contact-submit.is-busy,
-    .contact-submit:disabled {
-      opacity: 0.9;
-      cursor: progress;
-      transform: none;
-      box-shadow: 0 2px 8px rgba(0,0,0,.12);
-    }
-
-    .contact-submit.is-busy {
-      position: relative;
-      color: transparent; 
-    }
-    .contact-submit.is-busy::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      margin: auto;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      border: 2.5px solid rgba(255,255,255,0.55);
-      border-top-color: rgba(255,255,255,1);
-      animation: spin 0.8s linear infinite;
-    }
-
-    .thank-you {
-      display: none;
-      margin-top: 0.85rem;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--07);
-      font-family: var(--font-poppins);
-    }
-
-    @media (max-width: 768px) {
-      .contact-section {
-        padding: 4.5rem 1.5rem;
-      }
-
-      .contact-container {
-        padding: 0;
-      }
-
-      .contact-grid {
-        padding: 1.75rem;
-        border-radius: 20px;
-        gap: 2rem;
-      }
-
-      .contact-form {
-        padding: 1.5rem;
-      }
-
-      .contact-title {
-        font-size: 2rem;
-      }
-
-      .contact-icon {
-        width: 36px;
-        height: 36px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .contact-section {
-        padding: 4rem 1rem;
-      }
-
-      .contact-grid {
-        padding: 1.25rem;
-      }
-
-      .contact-form input,
-      .contact-form textarea {
-        font-size: 0.95rem;
-        padding: 0.65rem 0.85rem;
-      }
-
-      .contact-form-title {
-        font-size: 1.1rem;
-      }
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    
-     .site-footer {
-      background-color: var(--06);
-      color: var(--02);
-      padding: 1rem 2rem 0;
-      margin-top: auto;
-      border-top: 1px solid var(--03);
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 2rem;
-      gap: 5rem;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    
-    .footer-brand h2,
-    .footer-contact h3,
-    .footer-nav h3 {
-      margin-top: 0;
-      padding-top: 0;
-    }
-
-    .footer-contact h3,
-    .footer-nav h3 {
-      color: var(--02);
-      margin-bottom: 0.5rem;
-    }
-
-    .footer-contact ul,
-    .footer-nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .footer-contact li,
-    .footer-nav li {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: var(--02);
-      margin-bottom: 0.5rem;
-    }
-    
-    .footer-contact a,
-    .footer-nav a {
-      color: var(--02);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .footer-contact a:hover,
-    .footer-nav a:hover {
-      color: var(--05);
-    }
-
-    .footer-icon {
-      width: 24px;
-      height: 24px;
-      margin-right: 1rem;
-      vertical-align: middle;
-    }
-    
-/* Responsive for mobile */
+    /* === MOBILE === */
     @media (max-width: 768px) {
       .nav-container {
         flex-direction: column;
@@ -1035,39 +293,16 @@
         padding: 1rem;
       }
 
-      .logo, .footer-brand h2 {
+      .logo {
         font-size: 28px;
         margin-bottom: 0.5rem;
-      }
-
-      .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 2rem;
-        top: 1rem;
       }
 
       .nav-menu {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         gap: 0.75rem;
         width: 100%;
-        background-color: var(--04);
-        padding: 0;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        overflow: hidden;
-        max-height: 0;
-        opacity: 0;
-        transition: all 0.3s ease;
-      }
-
-      .nav-menu.show {
-        max-height: 500px;
-        padding: 1rem 0;
-        opacity: 1;
       }
 
       .nav-menu a {
@@ -1076,186 +311,135 @@
         padding: 0.75rem 0;
       }
 
-      .insights-section { padding: 5rem 1.5rem; }
-      .insights-title { font-size: 1.6rem; }
-      .insights-grid { gap: 1.75rem; }
-      .blog-card { grid-template-columns: 1fr; gap: 1.1rem; }
-      .blog-media { aspect-ratio: 5 / 3; }
-      .blog-body { gap: 0.35rem; }
-      .blog-title { font-size: 1.4rem; }
-      .values-button { display: flex; justify-content: center; }
-      .values-button .btn-learn-more {
-        width: 100%;
-        max-width: 320px;
-        font-size: 1rem;
-        padding: 0.85rem 1rem;
-        display: inline-flex;
-        justify-content: center;
+      .portfolio-grid h1 {
+        font-size: 1.6rem;
       }
 
-      .intro-grid {
-        flex-direction: column;
-        text-align: center;
+      .portfolio-grid h2 {
+        font-size: 1.1rem;
       }
 
-      .intro-content, .intro-image {
-        flex: 1 1 100%;
+      .dashboard-iframe {
+        height: 400px;
       }
 
-      .intro-welcome {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-      
-      .intro-name {
-        font-size: 2.25rem;
-      }
-
-      .intro-bullets {
-        padding-left: 1.5rem;
-        text-align: left;
-      }
-
-      .intro-quote, .projects-footer {
-        font-size: 2rem;
-      }
-      
-      .card, .value-card {
-        padding: 1.75rem;
-        font-size: 0.875rem;
-      }
-
-      .card h2, .value-card h3 {
-        font-size: 1.25rem;
-      }
-    
-      .card .arrow {
-        width: 22px;
-        height: 22px;
-        align-self: flex-start;
-      }
-      
-      .who-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      
-      .who-title {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 1.75rem;
-      }
-      
-      .values-title, .projects-title {
-        font-size: 1.5rem;
-        text-align: center;        
-        margin-bottom: 2.375rem;
-      }
-      
-      .who-content {
-        flex: 1 1 100%;
-      }
-      
-      .values-label, .projects-label {
-        text-align: center;
-        display: block;
-        width: 100%;
-        margin-bottom: 1.25rem;
-      }
-
-      .intro-bullets li, .card p, .who-content p, .value-card p, .project-desc {
-        font-size: 0.875rem;
-      }
-
-      .contact-title {
-        font-size: 1.625rem;
-      }
-      
-      .contact-subtitle, .contact-form input, .contact-form textarea {
-        font-size: 0.95rem;
-      }
-
-      .thank-you {
-        font-size: 1rem;
-      }
-      
       .footer-container {
         flex-direction: column;
         align-items: center;
         gap: 0.75rem;
       }
 
-      .footer-contact h3, .footer-nav h3, .footer-contact ul, .footer-nav ul, .footer-contact li, .footer-nav li {
+      .footer-contact h3,
+      .footer-contact ul,
+      .footer-contact li {
         text-align: center;
       }
     }
   </style>
 </head>
 
-
 <body>
+
   <header class="site-header">
     <div class="nav-container">
-      <a class="logo" href="https://github.com/annehtran/anhtran-portfolio">ANH TRAN</a>
-        <nav class="nav-menu" id="nav-menu">
+      <a class="logo" href="index.html">ANH TRAN</a>
+      <nav class="nav-menu" id="nav-menu">
         <a href="index.html">HOME</a>
         <div class="dropdown">
-        <a href="portfolio.html">PROJECTS</a>
-        <div class="dropdown-content">
-          <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Power BI</a>
-          <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">SQL</a>
-          <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Excel</a>
-          <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Python</a>
-        </div>
+          <a href="portfolio.html">PROJECTS</a>
+          <div class="dropdown-content">
+            <a href="https://github.com/annehtran/anhtran-portfolio/tree/main/Power%20BI%20Projects">Power BI</a>
+            <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">SQL</a>
+            <a href="https://github.com/annehtran/anhtran-portfolio/tree/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects">Excel</a>
+            <a href="https://github.com/annehtran/anhtran-portfolio/blob/ea6d80a5cd45b3373fc0c54a186cd7a7394f0c04/Python%20Projects/Data%20Importing%20and%20Cleaning/Exploring%20Airbnb%20Market%20Trends_script.ipynb">Python</a>
+          </div>
         </div>
         <a href="about.html">ABOUT ME</a>
       </nav>
     </div>
   </header>
 
-<main>
-    <section class="portfolio-section">
+  <main>
+    <div class="portfolio-grid">
 
-<h1>Power BI Portfolio</h1>
-<p>A collection of dashboards demonstrating data modeling, DAX, and business insight storytelling.</p>
+      <h1>Power BI Portfolio</h1>
+      <p>A collection of dashboards demonstrating data modeling, DAX, and business insight storytelling.</p>
+      <h2>Online Retail Dashboard</h2>
+      <p>Analyses £17.5M in retail transactions across 38 countries. Built with a star schema
+      data model, 30+ DAX measures, and 6 interactive pages covering revenue trends, product
+      performance, regional analysis, and customer drivers.</p>
+      <!-- Resize image to max 1200px wide in Paint before use -->
+      <div class="dashboard-img-wrapper">
+        <img src="images/Dashboard/01_report_overview.png"
+             alt="Online Retail Power BI Dashboard — Executive Overview" />
+             <ul class="dashboard-bullets">
+             <li>Revenue reached £8.2M, driven by higher AOV (+2%), despite a 6.2% drop in orders and flat customer growth.</li>
+             <li>Performance was heavily seasonal, with the UK contributing £6.8M (~85%) and Q4 driving the strongest revenue spike.</li>
+             </ul>
+     
+        <img src="images/Dashboard/02_product_and_category.png"
+             alt="Online Retail Power BI Dashboard — Product and Category" />
+             <ul class="dashboard-bullets">
+             <li>Top products are PAPER CRAFT LITTLE BIRDIE and MEDIUM CERAMIC TOP dominate both revenue and volume but each have ~50% return rate, while niche categories like Party & Celebration (5.6%) and Lighting (6.8%) remain under‑leveraged.</li>
+             <li>Expand top performers and grow niche categories to lift margins and diversify the product mix.</li>
+             </ul>
 
-<h2>Manufacturing KPI Dashboard</h2>
-<p>Tracks production efficiency, downtime, and throughput for operational decision‑making.</p>
-<iframe src="PASTE_YOUR_PUBLISH_TO_WEB_URL_HERE"></iframe>
+         <img src="images/Dashboard/03_region_performance.png"
+             alt="Online Retail Power BI Dashboard — Region Performance" />
+             <ul class="dashboard-bullets">
+             <li>The UK declined 6.6% YoY, dragging results, while France (+30%) and Spain (+45%) emerged as fast‑growing opportunities.</li>
+             <li>Stabilize the UK with win‑back efforts and aggressively scale high‑growth European markets to balance regional risk.</li>
+             <li>Australia is the fastest growing country, up 341.3% vs LY.</li>
+             </ul>   
+             
+          <img src="images/Dashboard/04_drivers.png"
+             alt="Online Retail Power BI Dashboard — Drivers" />
+             <ul class="dashboard-bullets">
+             <li>A -£1.1M volume effect and 54.5% drop in new customers drove the decline, even as pricing added £569K in uplift.</li>
+             <li>Strengthen acquisition and early‑funnel conversion to restore volume and reverse the customer decline.</li>
+             </ul>  
+             
+          <img src="images/Dashboard/05_country_details.png"
+             alt="Online Retail Power BI Dashboard — Country Details" />
+             <ul class="dashboard-bullets">
+             <li>UK revenue hit £6.8M, but orders fell 8.3%, with revenue heavily concentrated among a few high‑value customers.</li>
+             <li>Protect top customers with tailored retention while expanding mid‑tier segments to stabilize long‑term revenue.</li>
+             </ul>  
 
-<h2>Sales Performance Dashboard</h2>
-<p>Analyzes revenue trends, customer segments, and product performance.</p>
-<iframe src="PASTE_YOUR_PUBLISH_TO_WEB_URL_HERE"></iframe>
+          <p>Recommendations:
+            <ul class="dashboard-bullets">
+            <li>Build operational resilience around the November peak. The business depends on a single month for ~18% of annual revenue.</li>
+            <li>Develop a deliberate international growth strategy, investing in Australia as a priority international market.</li>
+            <li>Conduct a quality standards or identify the root defect of the two high-return products immediately.</li>
+            </ul>
+          </p>
 
-<h2>HR Analytics Dashboard</h2>
-<p>Shows employee distribution, retention, and workforce insights.</p>
-<iframe src="PASTE_YOUR_PUBLISH_TO_WEB_URL_HERE"></iframe>
+      </div>
+    </div>
+  </main>
 
-</section>
-</main>
-
-<footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-brand">
         <h2>ANH TRAN</h2>
       </div>
-
       <div class="footer-contact">
         <h3>CONTACT</h3>
         <ul>
-        <div class="contact-logo"></div>
           <li>
-            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener"><img src="images/linkedin.png" alt="LinkedIn" class="footer-icon" /></a>
-            <a href="https://github.com/annehtran" target="_blank" rel="noopener"><img src="images/GitHub logo.png" alt="GitHub" class="footer-icon" /></a>
+            <a href="https://www.linkedin.com/in/anhtrananalyst/" target="_blank" rel="noopener">
+              <img src="images/linkedin.png" alt="LinkedIn" class="footer-icon" />
+            </a>
+            <a href="https://github.com/annehtran" target="_blank" rel="noopener">
+              <img src="images/GitHub logo.png" alt="GitHub" class="footer-icon" />
+            </a>
           </li>
           <li><a href="mailto:annetran.uop@gmail.com">annetran.uop@gmail.com</a></li>
           <li>San Diego, CA, United States</li>
         </ul>
       </div>
-
-        
     </div>
   </footer>
+
 </body>
 </html>

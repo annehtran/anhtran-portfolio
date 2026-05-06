@@ -8,7 +8,7 @@ An end-to-end Power BI dashboards built with the full analytics lifecycle: raw d
 
 | # | Project | Domain | Dataset | Status |
 |---|---------|--------|---------|--------|
-| 1 | [Sales Online Analytics](./project-01-onlinesales/) | Retail | UCI Online Retail II | ✅ Complete |
+| 1 | [Sales Online Analytics](./project-01-onlineretail/) | Retail | UCI Online Retail II | ✅ Complete |
 | 2 | [Netflix Dashboard](./project-02-netflix/) | Service Ops | NYC 311 | 🔄 In Progress |
 
 ## Skills Demonstrated

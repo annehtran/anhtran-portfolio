@@ -14,11 +14,11 @@ This is an exploratory analysis on a real online retail transaction data set of 
 5. Recommendations
 
 ## Summary
-- Revenue declined 4.3% YoY: £8.6M in FY2010 vs £8.2M in FY2011, driven by volume contraction despite a slight price improvement.
-- United Kingdom dominates: 82.58% of all revenue (£8.2M) in FY2011, making international diversification a clear strategic priority.
-- Strong seasonal concentration: October and November alone account for over 30% of annual revenue in both years, driven by Christmas gifting.
-- Critical return rate problem: Two top-selling products (PAPER CRAFT LITTLE BIRDIE, MEDIUM CERAMIC TOP STORAGE JAR) each have ~50% return rates which is a major profitability risk.
-- Customer acquisition is healthy: 4,210 unique customers in 2011 vs 4,212 in 2010, with 2,657 customers buying in both years resulting a 63% retention rate.
+- **Revenue declined 4.3% YoY**: £8.6M in FY2010 vs £8.2M in FY2011, driven by volume contraction despite a slight price improvement.
+- **United Kingdom dominates**: 82.58% of all revenue (£8.2M) in FY2011, making international diversification a clear strategic priority.
+- **Strong seasonal concentration**: October and November alone account for over 30% of annual revenue in both years, driven by Christmas gifting.
+- **Critical return rate problem**: Two top-selling products (PAPER CRAFT LITTLE BIRDIE, MEDIUM CERAMIC TOP STORAGE JAR) each have ~50% return rates which is a major profitability risk.
+- **Customer acquisition is healthy**: 4,210 unique customers in 2011 vs 4,212 in 2010, with 2,657 customers buying in both years resulting a 63% retention rate.
 
 
 ## Recommendation

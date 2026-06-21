@@ -1,6 +1,7 @@
 ## Report 1 - Sea Level Rises
-
 [Power BI App](https://app.powerbi.com/view?r=eyJrIjoiMzc4YWY4NmUtZDZiMi00YzY2LTk0ZGYtN2ViZDRlNDZlOGM2IiwidCI6ImVlZGE2ZTc3LWZkZjMtNGYwMS04OWEwLTQ5Zjk2NDgwMGJjYyIsImMiOjZ9)  
+
+![Sea Level](report_snapshots/Sealevelrises.png)
 
 ### Skills Demonstrate
 Using Vega-lite code to create custom Deneb chart, the combination of line charts and scatterplot displays the sea level rising from 1977 to 2020. The combined line‑and‑point design makes it easy to see both the long‑term upward trend and the year‑to‑year variability in sea levels.
@@ -40,8 +41,6 @@ Using Vega-lite code to create custom Deneb chart, the combination of line chart
         },
 ```
  - Deneb allows to build visuals that are impossible with native Power BI charts. Vega‑Lite gives full control over marks, layers, scales, tooltips, and interactions, enabling pixel‑perfect custom visualizations inside Power BI.     
-
-![Sea Level](report_snapshots/Sealevelrises.png)
 
 ### Raw Dataset
 - Retrieved on January 28, 2024

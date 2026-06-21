@@ -48,7 +48,7 @@ Using Vega-lite code to create custom Deneb chart, the combination of line chart
 
  ```markdown
 ![Sea Level Visualization](report_snapshots/Sealevelrises.png)  
-
+```
 ### Raw Dataset
 - Retrieved on January 28, 2024
 - Source: https://ourworldindata.org/grapher/sea-level?time=earliest..2020-10-15

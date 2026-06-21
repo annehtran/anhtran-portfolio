@@ -52,7 +52,8 @@ Using Vega-lite code to create custom Deneb chart, the combination of line chart
 
 ![Map](report_snapshots/Map.png)
 
-### Skills Demonstrate: Shape Map · Custom TopoJSON · Slicer Formatting · Power BI Theme JSON · Conditional Formatting
+### Skills Demonstrate: 
+- Shape Map · Custom TopoJSON · Slicer Formatting · Power BI Theme JSON · Conditional Formatting
 Applying a custom TopoJSON file to Shape map that contains the geographic boundaries (at 110m resolution) to outline all countries in the world.
 - **Challenge:** Power BI's native Shape Map couldn't display multiple category colors simultaneously when multi-selecting filters.
 - **Solution:** Implemented a custom TopoJSON file at 110m resolution to provide accurate geographic boundaries while maintaining full color control per category.

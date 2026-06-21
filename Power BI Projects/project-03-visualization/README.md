@@ -55,7 +55,7 @@ A fictional dataset that assigns each country a dominant vibe, this map visualiz
 
 ### Skills Demonstrate: 
 **What I built:**
-- Configured Shape Map with a custom TopoJSON file (ne_110m_admin) containing geographic boundaries at 110m resolution to accurately outline all world countries:
+1. Configured Shape Map with a custom TopoJSON file (ne_110m_admin) containing geographic boundaries at 110m resolution to accurately outline all world countries:
     - Downloaded the Admin 0 Countries shapefile at 110m resolution from Natural Earth Data (naturalearthdata.com)
      
     - Converted the shapefile (.shp) to TopoJSON format using Mapshaper (mapshaper.org): an online tool that accepts shapefiles and exports them as TopoJSON/GeoJSON:
@@ -68,10 +68,10 @@ A fictional dataset that assigns each country a dominant vibe, this map visualiz
          - Set projection to Equirectangular for standard world view
     - Matched country names in the dataset to the TopoJSON geographic features to ensure correct country boundary mapping
 
-- Mapped 30+ countries across 5 vibe categories (Balanced, Creative, Innovative, Relaxed, Welcoming) with distinct colors per category
-- Solved multi-select color conflict by placing Vibe in the Legend field: maintaining individual category colors when multiple vibes are selected simultaneously
-- Built interactive tile slicer buttons styled with conditional formatting to match each vibe's distinct color identity
-- Configured auto-zoom on selection to focus the map view on selected vibe countries
+2. Mapped 30+ countries across 5 vibe categories (Balanced, Creative, Innovative, Relaxed, Welcoming) with distinct colors per category
+3. Solved multi-select color conflict by placing Vibe in the Legend field: maintaining individual category colors when multiple vibes are selected simultaneously 
+4. Built interactive tile slicer buttons styled with conditional formatting to match each vibe's distinct color identity
+5. Configured auto-zoom on selection to focus the map view on selected vibe countries
 
 **Challenge:** Power BI's native Shape Map couldn't display multiple category colors simultaneously when multi-selecting filters.
 

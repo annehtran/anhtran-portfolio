@@ -59,13 +59,13 @@ A fictional dataset that assigns each country a dominant vibe, this map visualiz
     - Downloaded the Admin 0 Countries shapefile at 110m resolution from Natural Earth Data (naturalearthdata.com)
      
     - Converted the shapefile (.shp) to TopoJSON format using Mapshaper (mapshaper.org): an online tool that accepts shapefiles and exports them as TopoJSON/GeoJSON:
-     - Uploaded all shapefile components (.shp, .dbf, .prj, .shx) together into Mapshaper
-     - Exported as TopoJSON format (.json)
+        - Uploaded all shapefile components (.shp, .dbf, .prj, .shx) together into Mapshaper
+        - Exported as TopoJSON format (.json)
      
     - Loaded the converted TopoJSON file into Power BI Shape Map:
-     - Format pane → Map settings → Add a map type
-     - Uploaded the ne_110m_admin.json file
-     - Set projection to Equirectangular for standard world view
+         - Format pane → Map settings → Add a map type
+         - Uploaded the ne_110m_admin.json file
+         - Set projection to Equirectangular for standard world view
     - Matched country names in the dataset to the TopoJSON geographic features to ensure correct country boundary mapping
 
 - Mapped 30+ countries across 5 vibe categories (Balanced, Creative, Innovative, Relaxed, Welcoming) with distinct colors per category

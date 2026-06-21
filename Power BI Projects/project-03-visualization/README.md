@@ -47,7 +47,7 @@ Using Vega-lite code to create custom Deneb chart, the combination of line chart
  - Deneb allows to build visuals that are impossible with native Power BI charts. Vega‑Lite gives full control over marks, layers, scales, tooltips, and interactions, enabling pixel‑perfect custom visualizations inside Power BI.     
 
  ```markdown
-![Sea Level](Power BI Projects/project-03-visualization/report_snapshots/Sealevelrises.png)
+![Sea Level](report_snapshots/Sealevelrises.png)
 ```
 ### Raw Dataset
 - Retrieved on January 28, 2024

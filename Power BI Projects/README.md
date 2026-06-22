@@ -9,7 +9,7 @@ An end-to-end Power BI dashboards built with the full analytics lifecycle: raw d
 | # | Project | Domain | Dataset | Status |
 |---|---------|--------|---------|--------|
 | 1 | [Sales Online Analytics](./project-01-onlineretail/) | Retail | UCI Online Retail II | ✅ Complete |
-| 2 | [Netflix Dashboard](./project-02-netflix/) | Service Ops | NYC 311 | 🔄 In Progress |
+| 2 | [Advanced Visualzation Reports](./project-02-visualization/) | Multiple | Multiple | 🔄 Keep Accumulating |
 
 ## Skills Demonstrated
 - **Understand the business context** - What does each row represent? What time period? Who created this data?
@@ -18,3 +18,4 @@ An end-to-end Power BI dashboards built with the full analytics lifecycle: raw d
 - **Data Modelling** — star schema, active relationships, date tables, cardinality management
 - **Report UX** — drill-through, bookmarks, dynamic titles, slicer sync, conditional formatting
 - **Documentation** — data definition, measure rules, business report
+- **Beyond the Build-in Functions**: custom TopoJSON to configure Shape Map, SVG-in-DAX, Deneb chart using Vega-lite code

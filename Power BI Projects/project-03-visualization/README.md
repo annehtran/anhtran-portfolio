@@ -95,19 +95,14 @@ Using Scalable Vector Graphics (SVG), an XML-based language and a web-standard f
 - Used ISINSCOPE() DAX function to detect row context and dynamically switch visual rendering within a single column
 - Created SVG-based pill badges using DAX string measures to display Margin %: green pills for country subtotals, blue pills for product detail rows
 - Built dynamic SVG data bars with color-coded dot indicators for Profit % column: dot color changes based on thresholds (green ≥20%, blue ≥10%, grey below 10%)
+- data:image/svg+xml URI encoding: image rendering in matrix
 - Applied conditional formatting to Total Sales column: bold blue for country subtotals, standard grey for product rows
 - Integrated a Text Filter visual for case-insensitive multi-product search filtering
 - Built segment cards showing Total Sales per segment using New Card visual with custom header styling
 
 **Key DAX techniques:**
-1. DAX
+1. FORMAT(), NOT ISINSCOPE()
 2. SVG
 3. Matrix/Conditional Formating
 4. Input Filter
 5. New Card Visual
-
-- ISINSCOPE(): row context detection
-- SVG string measures: inline data visualization
-- data:image/svg+xml URI encoding: image rendering in matrix
-- FORMAT(): dynamic percentage display
-- NOT ISINSCOPE(): subtotal detection

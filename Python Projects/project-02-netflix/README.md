@@ -14,13 +14,7 @@ This is an exploratory analysis on Netflix TV Shows and Movies using data scappe
 5. Recommendations
 
 ## Summary
-- Finding from the data
 
-
-## Conclusion
-- Recommendation
-
----
 
 # Raw Data and Outputs
 ## Dataset
@@ -30,18 +24,3 @@ This is an exploratory analysis on Netflix TV Shows and Movies using data scappe
 - License: CC0: Public Domain
 - Dataset was acquired in July 2022
 
-## Key DAX Measures
-1. 
-2.
-3.
-
-## Report Pages
-1. Executive Overview
-2. Type & Genres
-3. Region Performance
-4. Content Distribution
-5. Definitions & About
-
-## Final Reports
-1. Raw Power BI file is located in pbix folder
-2. Snapshot of reports are exported in pdf located at exports folder

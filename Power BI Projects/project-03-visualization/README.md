@@ -54,7 +54,6 @@ A fictional dataset that assigns each country a dominant vibe, this map visualiz
 ![Map](report_snapshots/Map.png)
 
 ### Skills Demonstrate: 
-**What I built:**
 1. Configured Shape Map with a custom TopoJSON file (ne_110m_admin) containing geographic boundaries at 110m resolution to accurately outline all world countries:
     - Downloaded the Admin 0 Countries shapefile at 110m resolution from Natural Earth Data (naturalearthdata.com)
      
@@ -94,7 +93,6 @@ Using Scalable Vector Graphics (SVG), an XML-based language and a web-standard f
 ![Map](report_snapshots/Financial_matrix.png)
 
 ### Skills Demonstrate: 
-**What I built:**
 - Designed a matrix with expandable Country → Product hierarchy showing subtotal and detail rows with distinct visual treatments
 - Used ISINSCOPE() DAX function to detect row context and dynamically switch visual rendering within a single column
 - Created SVG-based pill badges using DAX string measures to display Margin %: green pills for country subtotals, blue pills for product detail rows

@@ -106,3 +106,25 @@ Using Scalable Vector Graphics (SVG), an XML-based language and a web-standard f
 3. Matrix/Conditional Formating
 4. Input Filter
 5. New Card Visual
+
+## Report 4 - EU Arrivals - Difference in foreign tourists over time across EU countries
+Using conditional visibility through overlapping visuals and dynamic background color transparency to control what users see based on their country selections. Analyzing differences in foreign tourist arrivals over time across several European countries using EUROSTAT data.
+
+[Power BI App](https://app.powerbi.com/view?r=eyJrIjoiYTI2Y2FmYzQtMTFlNC00ODM0LTg5ZWEtOWFjOWZiYWI4YjNmIiwidCI6ImVlZGE2ZTc3LWZkZjMtNGYwMS04OWEwLTQ5Zjk2NDgwMGJjYyIsImMiOjZ9)  
+
+![Foreign_Arrivals](report_snapshots/Financial_matrix.png)
+### Skills Demonstrated:
+- Built a line chart showing % of foreign tourist arrivals over time by country with a country slicer for dynamic filtering
+- Implemented conditional visibility using overlapping visuals: Warning card (Visual A) stacked on top of Difference chart (Visual B) occupying the same canvas space
+- Created DAX measures returning hex color codes with alpha channel (#FFFFFF00 for transparent, #FF000000 for visible) to simulate show/hide behavior
+- Applied dynamic transparency via conditional formatting on card background color: warning disappears when exactly 2 countries are selected, revealing the difference chart underneath
+- Built a lollipop chart showing Country A minus Country B difference in foreign tourist % over time
+- Created a dynamic summary card displaying insight text based on selected countries and most recent year data
+- Used MINX/MAXX with ALLSELECTED to dynamically identify the two selected countries for comparison
+
+**Key DAX techniques:**
+1. ALLSELECTED(), MINX(), MAXX() for dynamic country selection
+2. Hex color with alpha channel for conditional transparency
+3. IF() with VAR ordering to preserve filter context
+4. ALLSELECTED() for year context in difference calculation
+5. Dynamic text measures for summary card

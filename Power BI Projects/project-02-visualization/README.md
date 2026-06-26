@@ -110,7 +110,7 @@ Using Scalable Vector Graphics (SVG), an XML-based language and a web-standard f
 ## Report 4 - EU Arrivals - Difference in foreign tourists over time across EU countries
 Using conditional visibility through overlapping visuals and dynamic background color transparency to control what users see based on their country selections. Analyzing differences in foreign tourist arrivals over time across several European countries using EUROSTAT data. [Power BI App](https://app.powerbi.com/view?r=eyJrIjoiYTI2Y2FmYzQtMTFlNC00ODM0LTg5ZWEtOWFjOWZiYWI4YjNmIiwidCI6ImVlZGE2ZTc3LWZkZjMtNGYwMS04OWEwLTQ5Zjk2NDgwMGJjYyIsImMiOjZ9)  
 
-![Foreign_Arrivals](report_snapshots/Financial_matrix.png)
+![Foreign_Arrivals](report_snapshots/EU_Arrivals.png)
 ### Skills Demonstrated:
 - Built a line chart showing % of foreign tourist arrivals over time by country with a country slicer for dynamic filtering
 - Implemented conditional visibility using overlapping visuals: Warning card (Visual A) stacked on top of Difference chart (Visual B) occupying the same canvas space

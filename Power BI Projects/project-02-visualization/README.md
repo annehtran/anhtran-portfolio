@@ -121,8 +121,7 @@ Using conditional visibility through overlapping visuals and dynamic background 
 - Used MINX/MAXX with ALLSELECTED to dynamically identify the two selected countries for comparison
 
 **Key DAX techniques:**
-1. ALLSELECTED(), MINX(), MAXX() for dynamic country selection
+1. ALLSELECTED(), MINX(), MAXX() for dynamic country selection and difference calculation in year context
 2. Hex color with alpha channel for conditional transparency
 3. IF() with VAR ordering to preserve filter context
-4. ALLSELECTED() for year context in difference calculation
-5. Dynamic text measures for summary card
+4. Dynamic text measures for summary card
